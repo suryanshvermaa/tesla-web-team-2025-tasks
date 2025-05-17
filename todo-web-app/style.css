@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+* {
+	font-family: 'Kanit', sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	width: 50vw;
+	height: 100vh;
+	/* background-color: #f0f0f0; */
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+input[type="text"] {
+	width: 30vw;
+	border: 1px solid #C63FFc;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+input[type="text"]:focus {
+	outline: none;
+	border-color: #C63FFc;
+}
+
+#submit {
+	background-color: #C63FFc;
+	color: #fff;
+	border: none;
+	border-radius: 1px;
+	padding: 0.15rem 1rem;
+	margin-left : 1rem;
+	border-radius: 5px;
+	font-size: 1rem;	
+	cursor: pointer;
+	transition: background 0.2s;
+}
+#submit:hover {
+	background-color: #a02cc7;
+}
+
+ul {
+	width: 100%;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+ul li {
+	margin-left: 2vw;;
+	list-style: none;
+	padding: 0.5rem 0;
+	user-select: none;
+}
+
+ul li::before {
+	content: '';
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 12px;
+	vertical-align: middle;
+	border: 2px solid #C63FFc;
+	border-radius: 4px;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+ul li.checked {
+	color: #222;
+	opacity: 0.6;
+
+}
+
+ul li.checked::before {
+	background: #C63FFc;
+	border-color: #C63FFc;
+	background-image: url('https://img.icons8.com/ios-filled/18/ffffff/checkmark.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
