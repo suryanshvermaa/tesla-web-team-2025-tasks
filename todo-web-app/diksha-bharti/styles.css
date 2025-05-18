@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+/* styling the todo-app div*/
+.todo-app{
+    width:40%;
+    margin:100px auto ;
+}
+#heading{
+    text-align:center;
+    font-size:32px;
+}
+#inputTodo{
+   display: grid;
+    grid-template-columns: 85% 10%;
+    grid-gap: 5%;
+    margin: 1.5rem 0;
+}
+
+/* Making the app responsive */
+@media screen and (max-width:1074px) and (min-width:450px){
+    #inputTodo{
+        grid-gap:2%;
+        grid-template-columns: 80% 15%;
+    }
+    .todo-app{
+        width:70%;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    #inputTodo{
+        grid-gap:1rem;
+        grid-template-columns:1fr;
+        grid-template-areas: "input"
+                             "button";
+    }
+    #inputTodo button {
+        grid-area: button;
+        width: 40%;  
+        margin: 0 auto;
+    }
+    .todo-app{
+        width:80%;
+    }
+    li{
+        grid-gap:10px;
+    }
+}
+
+
+#inputTodo input{
+    border:2px solid #7C3AED;
+    border-radius:5px;
+    padding:0.25rem 0.5rem;
+    outline:none;
+    font-size:16px;
+}
+#addBtn{
+    background-color:#7C3AED;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    font-size:16px;
+    padding:0.25rem;
+}
+#addBtn:hover{
+    background-color:white;
+    color:#7C3AED;
+    border:2px solid #7C3AED;
+}
+
+li{
+    list-style-type:none;
+    display:grid;
+    grid-template-columns:10% 70% 10% 10%;
+    align-items:center;
+    margin:0.5rem;
+    font-size:18px;
+    text-decoration:underline;
+}
+li::before{
+    content:url("unchecked-image.png");
+    background-size:cover;
+    margin-right:1rem;
+}
+li.checked::before{
+    content:url("checked-image.png");
+    background-size:cover;
+    margin-right:1rem;
+}
+.deleteBtn{
+    background:url("delete-bin.png");
+    height:20px;
+    background-size:contain;
+    outline:none;
+    border:none;
+    background-repeat: no-repeat;
+}
+.editBtn{
+    background:url("edit.png");
+    height:30px;
+    background-size:contain;
+    outline:none;
+    border:none;
+    background-repeat: no-repeat;    
+}
+.editInput{
+    border:none;
+    outline:none;
+    font-size:18px;
+    user-select: none;
+}
