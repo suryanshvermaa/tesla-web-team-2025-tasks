@@ -10,6 +10,11 @@
 │       ├── index.html
 │       ├── styles.css
 │       └── script.js
+├── weather-app/ 
+│   ├── Team-Member-Name-1/
+|   │   ├── weather-react-app/
+│   ├── Team-Member-Name-2/
+│   │   ├── weather-react-app/
 └── README.md
 ```
 
